@@ -47,7 +47,7 @@ let murid2 = Mahasiswa('Dony', 12);
 */
 
 // constractor Function
-
+/*
 function Mahasiswa(nama, energy){
     this.nama = nama;
     this.energy = energy;
@@ -66,8 +66,10 @@ function Mahasiswa(nama, energy){
 
 }
 
+
 let murid1 = new Mahasiswa('Khifrvn', 10);
 let murid2 = new Mahasiswa('Dony', 12);
+*/
 
 // object.create
 /*
@@ -88,8 +90,8 @@ const methodMahasiswa = {
 
 function Mahasiswa(nama, energy){
     let mahasiswa = Object.create(methodMahasiswa);
-    this.nama = nama;
-    this.energy = energy;
+    mahasiswa.nama = nama;
+    mahasiswa.energy = energy;
 
     return mahasiswa;
 }
@@ -97,3 +99,21 @@ function Mahasiswa(nama, energy){
 let murid1 = Mahasiswa('Khifrvn', 10);
 let murid2 = Mahasiswa('Dony', 12);
 */
+
+// Prototype  
+function Mahasiswa(nama, energy){
+    this.nama = nama;
+    this.energy = energy;
+}
+
+Mahasiswa.prototype.makan = function(porsi){
+    this.energy += porsi;
+    return(`Halo ${this.nama}, selamat Makan!`)
+}
+
+Mahasiswa.prototype.play = function(jam){
+    this.energy -= jam;
+    return(`Halo ${this.nama}, selamat Main!`)
+}
+
+let Khifrvn = new Mahasiswa('Khifrvn', 10);
