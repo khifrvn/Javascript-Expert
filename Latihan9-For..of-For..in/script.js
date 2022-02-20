@@ -44,6 +44,7 @@ function jumlahkanAngka(){
     return jumlah;
 }
 
+// output 12345
 jumlahkanAngka(1,2,3,4,5);
 
 //  --------- FOR..IN ------------
