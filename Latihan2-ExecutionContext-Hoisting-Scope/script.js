@@ -8,6 +8,7 @@ function dua(){
     console.log(nama);
 }
 
+// console
 console.log(nama);
 var nama = 'Elf';
 satu();
