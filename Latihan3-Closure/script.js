@@ -17,7 +17,7 @@ selamatPagi('John');
 
 
 // Lexical Scope
-
+// Scope
 function init(){
     let nama = 'John'; // local variable
     function tampilNama(){ // inner function (closure)
