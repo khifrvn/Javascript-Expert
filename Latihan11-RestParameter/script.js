@@ -1,7 +1,7 @@
 // Rest Parameter
 
 function myFunc(a,b,...values){
-    //return console.log(a, b, ...values);
+    //return console.log(a, b, ...values); for add value
     return Array.from(a, b, ...values);
 }
 
