@@ -16,4 +16,4 @@ dua('Vuey');
 console.log(nama);
 
 // better open on Javascript Visualizer
-// this hard
+// this
