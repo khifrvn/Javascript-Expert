@@ -5,7 +5,7 @@ let mahasiswa1 = {
     energy: 10,
     
     makan: function(porsi){
-        this.energy = this.energy + porsi;
+        this.energy = this.energy + porsi; //object
         console.log(`Halo ${this.nama}, selamat makan`)
     }
 }
